@@ -43,8 +43,7 @@ tdnf install mysql
       max_binlog_size   = 100M
 
 
-6. /usr/bin/mysqld start (x)
-   mysqld_safe --skip-grant-tables &
+6. /usr/bin/mysqld --skip-grant-tables &;   mysqld_safe --skip-grant-tables &
 
 7. python3 manage.py runserver 0.0.0.0:8000
 
