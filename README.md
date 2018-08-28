@@ -12,9 +12,8 @@ tdnf install mysql
 3. mkdir -p /var/lib/mysql/; chown mysql:mysql -R /var/lib/mysql
 4. mkdir -p /var/log/mysql/; chown mysql:mysql -R /var/log/mysql
 5. create conf file
-  a. mkdir -p /etc/mysql/mysql.conf.d 
-  b. echo "!includedir /etc/mysql/mysql.conf.d/" > /etc/mysql/my.cnf
-  c. Create mysqld.cnf file in /etc/mysql/mysql.conf.d/ folder.
+  a. mkdir -p /etc/mysql/
+  b. Create mysqld.cnf file in /etc/mysql/ folder.
 
       [mysqld_safe]
       socket		= /var/run/mysqld/mysqld.sock
